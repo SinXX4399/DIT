@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class MOD {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int num1 = 0;
+		int num2 =0;
+		double mod = 0.00;
+		
+		
+		System.out.print("Enter 2 numbers : ");
+		num1 = sc.nextInt();
+	    num2 = sc.nextInt();
+	    
+	    mod = (num1+num2)/2.00;
+	    System.out.print("mod = " + mod); 
+	    
+
+	}
+
+}
