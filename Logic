@@ -1,0 +1,17 @@
+public class Logic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a = 5;
+		int b = 3;
+		int c = 2;
+		int d = 8;
+		boolean result = false;
+		
+		 result = ((a>b)&&(a<d))&&((c>d)||(b<d)) ;
+		 System.out.print(result);
+
+	}
+
+}
