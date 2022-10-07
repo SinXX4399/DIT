@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+
+public class GCFandLCM {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner sc = new Scanner(System.in);
+        int num1 = 0;
+        int num2 = 0;
+        
+        int gcd = 0;
+        int lcm = 0;
+      
+        int n = 0;
+        
+        System.out.println("Enter two integer numbers : ");
+        num1 = sc.nextInt();
+        num2 = sc.nextInt();
+        
+        if(num1>num2) {
+        	n = num2;
+        }
+        else if(num2>num1) {
+        	n = num1;
+        }
+        
+        
+        //find gcf
+        
+        for(int i = n; i>=0;i--) {
+        	
+        	if((num1%i==0)&&(num2%i==0)) {
+        		gcd = i;
+        		break;
+        		
+        		
+        	}
+        }//for
+        	
+        	
+       //find lcm
+        	
+        	int mul = num1*num2;
+        	
+        	for(int i = 1;i<=mul;i++) {
+        		
+        		if((i%num1==0)&&(i%num2==0)) {
+        			lcm = i;
+        			break;
+        		}	
+        		
+        	}//for
+        	
+        	
+        	
+        	System.out.println(" Greatest common divisor of " + num1 + "&" + num2 + " = "+gcd );
+        	System.out.println(" Least common multiple of " + num1 + "&" + num2 + " = "+lcm );
+        	
+
+        	
+        }
+        
+        
+   
+        
+	}
